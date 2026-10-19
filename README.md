@@ -1,71 +1,77 @@
-# WeatherApp
+🎮 GuessEville
 
-A full-stack weather dashboard built with React, Vite, Express, and MongoDB.
+Think fast. Guess smart. Challenge your friends!
 
-## Features
+GuessEville is a fun, brain-training mini-game designed to encourage logical thinking, problem-solving, and friendly competition. It offers an engaging way to practise your brainpower while enjoying interactive gameplay.
 
-- Search cities and places with the Open-Meteo Geocoding API
-- View live current weather, next 24 hours, and a 7-day forecast
-- Use browser geolocation for local weather
-- Save favorite locations in MongoDB
-- Persist recent searches on the server
-- No weather API key required
+🌐 Live Demo: https://guessville.vercel.app
 
-## Tech Stack
+✨ Features
 
-- Frontend: React, Vite, lucide-react
-- Backend: Express
-- Weather data: Open-Meteo
-- Database: MongoDB Atlas or a local MongoDB instance
+🧠 Brain-training gameplay focused on thinking and problem-solving
 
-## Environment
+🎮 Interactive mini-game experience
 
-Create a `.env` file from `.env.example`:
+👥 Multiplayer-focused fun and friendly competition
 
-```bash
-CLIENT_ORIGIN=http://localhost:5173
-PORT=3001
-VITE_SERVER_URL=http://localhost:3001
-MONGODB_URI=mongodb+srv://username:password@cluster0.example.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
-MONGODB_DB_NAME=weatheradmin
-```
+📱 Designed for an accessible, user-friendly experience
 
-For MongoDB Atlas, replace `username`, `password`, and `cluster0.example.mongodb.net` with your real Cluster0 connection string details. Keep `.env` private.
+🚀 Live deployment for easy access
 
-## Run Locally
+🛠️ Tech Stack
 
-```bash
+The project uses the technologies and tools included in its source code. Update this section with the exact frontend, backend, and database technologies used by GuessEville.
+
+🚀 Getting Started
+
+Prerequisites
+
+Install the tools required by the project, such as Node.js and npm, if applicable.
+
+Installation
+
+Clone the repository:
+
+git clone https://github.com/sururanwer-cloud/Guessville.git
+
+Navigate to the project directory:
+
+cd Guessville
+
+Install dependencies:
+
 npm install
+
+Start the development server using the command defined in package.json.
+
 npm run dev
-```
 
-The Vite client runs on `http://localhost:5173` and the Express API runs on `http://localhost:3001`.
+Note: The installation and startup commands may need adjustment to match the actual project configuration.
 
-If the server says `EADDRINUSE` or `address already in use`, another old dev process is still using the port:
+📂 Project Structure
 
-```bash
-npm run free:ports
-npm run dev
-```
+The repository may include the following directories:
 
-## API Routes
+src/ — Application source code
 
-- `GET /health`
-- `GET /api/db/health`
-- `GET /api/search?q=mumbai`
-- `GET /api/weather?lat=19.076&lon=72.8777&timezone=Asia/Kolkata`
-- `GET /api/saved-locations`
-- `POST /api/saved-locations`
-- `DELETE /api/saved-locations/:id`
-- `GET /api/recent-searches`
+server/ — Backend code, if applicable
 
-## Production
+scripts/ — Utility and development scripts
 
-Build the frontend and start the server:
+screenshots/ — Project screenshots and visuals
 
-```bash
-npm run build
-npm start
-```
+package.json — Project metadata and dependencies
 
-The Express server serves the Vite build from `dist`.
+🌍 Live Website
+
+Try GuessEville here: https://guessville.vercel.app
+
+🤝 Contributing
+
+Suggestions, improvements, and bug reports are welcome. Feel free to fork the repository and submit a pull request.
+
+📄 License
+
+No license has been specified yet. Add a license file if you intend to define permissions for reuse and distribution.
+
+Built with 💙 for curious minds and friendly competition.
